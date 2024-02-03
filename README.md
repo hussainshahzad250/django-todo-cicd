@@ -42,3 +42,19 @@ pip freeze > requirement.txt
 ```
 
 Cheers and Happy Coding :)
+
+## Run application using docker container 
+
+#### Build using below docker command
+```
+docker build -t django-todo-cicd:1 .
+```
+
+#### Run using below docker command
+```
+docker run -d -p 8000:8000 django-todo-cicd:1
+```
+
+```
+http://localhost:8000
+```
